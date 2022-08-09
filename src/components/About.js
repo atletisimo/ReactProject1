@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import data from "../data";
 
 const About = () => {
-    const [cards, setCards] = useState(data);
-    
+  const [cards, setCards] = useState(data);
 
   return (
-    <section>
+    <section style={{ textAlign: "center" ,position:"relative",top:'40px' }}>
       <h3>About this project</h3>
       <p>
         The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform
@@ -20,21 +19,25 @@ const About = () => {
         desk space below your computer to allow notepads, pens, and USB sticks
         to be stored under the stand.
       </p>
-          <div>{cards.map((card) => {
-              const { id, title, pledge, description, left, button } = card;
-              return (
-                <article key={id} >
-                <h3 >{title}</h3>
-                <p >{pledge}</p>
-                <p  >{description}</p>
-                <p >{left} {""} <span >
-                    left</span></p>
-                <button>{button}</button>
+      <div>
+        {cards.map((card) => {
+          const { id, title, pledge, description, left, button } = card;
+          return (
+            <article key={id}>
+              <h3>{title}</h3>
+              <p>{pledge}</p>
+              <p>{description}</p>
+              <p>
+                {left} {""} <span>left</span>
+              </p>
+              <button class="btn" style={{ padding: "10px" , position:'relative',left:'280px',  borderRadius: "20px",
+  fontSize: "16px"}}>
+                {button}
+              </button>
             </article>
-
-              )
-          
-      })}</div>
+          );
+        })}
+      </div>
     </section>
   );
 };
