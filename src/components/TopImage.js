@@ -22,7 +22,7 @@ const TopImage = (props) => {
     window.addEventListener("resize", resizeHandler);
     return () => window.removeEventListener("resize", resizeHandler);
   });
-  return <img className = "desktopImg absolute t-0 w-full  " src={bgImage} alt="top" />;
+  return <img className="desktopImg absolute t-0 w-full  " src={bgImage} alt="top" />;
 };
 
 export default TopImage;

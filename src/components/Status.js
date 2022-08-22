@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 const Container = styled.div`
   background-color: white;
   padding: 3rem;
@@ -80,21 +81,20 @@ const Status = (props) => {
           <Bold>{props.amount}</Bold>
           <Light>of $100,000 backed</Light>
         </div>
+
         <div className="card-2">
           <Bold>{props.backers}</Bold>
           <Light>total backers</Light>
         </div>
+
         <div className="card-3">
           <Bold>{props.daysLeft}</Bold>
           <Light>days left</Light>
         </div>
       </div>
-
       <div className="progress w-9/12 bg-gray-300 rounded-full mt-10 w-full">
         <p className="btn py-2 rounded-full w-9/12"></p>
       </div>
-
-     
     </Container>
   );
 };

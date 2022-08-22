@@ -1,6 +1,7 @@
 import React from "react";
 import check from "../images/icon-check.svg";
 import styled from "styled-components";
+
 const Container = styled.div`
   position: fixed;
   top: 0;

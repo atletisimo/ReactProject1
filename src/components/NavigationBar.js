@@ -3,8 +3,9 @@ import styled from "styled-components";
 import logo from "../images/logo.svg";
 import hamburger from "../images/icon-hamburger.svg";
 import MobileNavbarAdditional from "./MobileNavbarAdditional";
+
 const Nav = styled.nav`
-  width: 100vw;
+  width: 106vw;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -82,7 +83,7 @@ const NavigationBar = () => {
   };
   return (
     <Nav>
-    
+
       <A href="#titlePage" className={isClicked ? "isClicked" : null}>
         <Brand src={logo} alt="Crowd Fund" />
       </A>

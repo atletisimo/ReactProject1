@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "../images/logo-mastercraft.svg";
-
 import bookmarkGray from "../images/icon-bookmark.svg";
 import styled from "styled-components";
+
 const TitleContainer = styled.div`
   background-color: white;
   position: relative;
@@ -108,7 +108,7 @@ const BookmarkButton = styled.p`
 const TitleCard = (props) => {
   const [isBookmarked, setIsBookmarked] = useState(false);
   const buttonHandler = () => {
-    setIsBookmarked(true);
+    setIsBookmarked(!isBookmarked);
   };
   return (
     <TitleContainer id="titlePage">

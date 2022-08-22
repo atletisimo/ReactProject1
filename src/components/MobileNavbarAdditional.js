@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import logo from "../images/logo.svg";
 import cross from "../images/icon-close-menu.svg";
+
 const Container = styled.div`
   position: fixed;
   top: 0;
@@ -18,7 +19,7 @@ const List = styled.ul`
   background: white;
   height: 201px;
   width: 85%;
-  margin-top: 1rem;
+  margin-top: 0.2rem;
   border-radius: 7px;
   transition: all 220ms ease-in-out;
   hr {

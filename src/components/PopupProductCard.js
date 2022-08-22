@@ -3,6 +3,7 @@ import styled from "styled-components";
 import cross from "../images/icon-close-modal.svg";
 import crossDark from "../images/icon-close-modal.svg";
 import PopupProducts from "./PopupProducts";
+
 const Container = styled.div`
   position: fixed;
   top: 0;
