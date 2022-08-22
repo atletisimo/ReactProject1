@@ -5,13 +5,16 @@ import hamburger from "../images/icon-hamburger.svg";
 import MobileNavbarAdditional from "./MobileNavbarAdditional";
 
 const Nav = styled.nav`
-  width: 106vw;
+  width: 111vw;
   color: white;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   position: relative;
   z-index: 4;
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
 `;
 const Brand = styled.img`
   text-decoration: none;
@@ -27,9 +30,9 @@ const List = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-right: 10vw;
+  margin-right: 11vw;
   font-weight: 500;
-  width: 260px;
+  width: 243px;
   margin-top: 0px;
   @media (max-width: 768px) {
     flex-direction: column;
